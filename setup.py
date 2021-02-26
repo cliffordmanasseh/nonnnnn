@@ -401,7 +401,7 @@ class Checks():
         """ Enable or disable Plaidml for AMD"""
         self.output.info("AMD Support: AMD GPU support is currently limited.\r\n"
                          "Nvidia Users MUST answer 'no' to this option.")
-        i = n
+        i = "n"
         if i in ("Y", "y"):
             self.output.info("AMD Support Enabled")
             self.env.enable_amd = True
